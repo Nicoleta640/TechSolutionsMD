@@ -1,0 +1,271 @@
+.contact-banner{
+    height:250px;
+    background:url("../assets/images/contact-banner.png") center/cover;
+    position:relative;
+}
+
+.contact-banner::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.1);
+}
+
+.banner-content{
+    position:relative;
+    z-index:2;
+    height:100%;
+    display:flex;
+    align-items:center;
+    padding-left:60px;
+}
+
+.banner-content h1{
+    color:white;
+    font-size:42px;
+    font-weight:700;
+    line-height:1.3;
+}
+
+.benefits-table{
+    max-width:1100px;
+    margin:20px auto 50px;
+    padding:20px 0;
+
+    display:grid;
+    grid-template-columns:1fr 1px 1fr;
+    gap:40px;
+
+    border-top:2px solid #bcbcbc;
+    border-bottom:2px solid #bcbcbc;
+}
+
+.table-divider{
+    background:#bcbcbc;
+}
+
+.benefits-column ul{
+    list-style:none;
+}
+
+.benefits-column li{
+    margin:12px 0;
+    font-size:18px;
+}
+
+.benefits-column li::before{
+    content:"✓ ";
+    font-weight:bold;
+}
+
+.contact-section{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.contact-section h2{
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+.contact-form .row{
+    display:flex;
+    gap:30px;
+    margin-bottom:25px;
+}
+
+.contact-form input{
+    flex:1;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    border:none;
+    border-radius:10px;
+    padding:18px;
+    background:#eceaea;
+    font-size:16px;
+}
+
+.contact-form textarea{
+    height:180px;
+    resize:none;
+    margin-bottom:30px;
+}
+
+.contact-form button{
+    background:#960027;
+    color:white;
+    border:none;
+    padding:14px 45px;
+    border-radius:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#76001f;
+    transform:translateY(-3px);
+}
+
+.contact-cards{
+    max-width:1200px;
+    margin:70px auto;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#960027;
+    padding:18px;
+    border-radius:12px;
+    width:300px;
+    box-shadow:0 6px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card-content{
+    background:white;
+    min-height:180px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.icon{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.card-content p{
+    font-size:22px;
+    font-weight:600;
+    line-height:1.5;
+}
+
+@media(max-width:768px){
+
+    .row{
+        flex-direction:column;
+    }
+
+    .benefits-table{
+        grid-template-columns:1fr;
+    }
+
+    .table-divider{
+        display:none;
+    }
+
+    .banner-content h1{
+        font-size:28px;
+    }
+}
+.contact-banner{
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.contact-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-text{
+    position: absolute;
+    left: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.banner-text h1{
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 1.3;
+    max-width: 500px;
+}
+.contact-cards{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    margin: 60px auto;
+}
+
+.contact-card{
+    width: 330px;
+    padding: 15px;
+    background: #9b002c; /* bordo */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.card-content{
+    background: white;
+    min-height: 220px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.card-content i{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.card-content p{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+header{
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    border-bottom:1px solid #ddd;
+}
+
+nav{
+    display:flex;
+    gap:40px;
+}
+
+
+.service-cards{
+    background:#800020;
+    width:100%;
+    padding:40px 0;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
